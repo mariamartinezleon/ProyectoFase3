@@ -15,7 +15,7 @@ public class Conexion {
    public Connection conexion(){
        try {
            Class.forName("com.mysql.jdbc.Driver");
-           conection   = DriverManager.getConnection ("jdbc:mysql://localhost:3306/proyectohr-ads","root","");
+           conection   = DriverManager.getConnection ("jdbc:mysql://localhost:3306/proyectohr","root","root");
            sentencia= conection.createStatement();
            return conection;
            
@@ -66,5 +66,6 @@ public class Conexion {
     }
 
    //*/
+              
     
 }// cierre de clase
